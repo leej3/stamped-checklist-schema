@@ -146,7 +146,7 @@
                     "items": [
                         {
                             "id": "stamped-checklist:should/009",
-                            "text": "Are components governed by different access requirements isolated in separate modules where practical?"
+                            "text": "Are restricted data or software kept in their own modules?"
                         }
                     ]
                 },
