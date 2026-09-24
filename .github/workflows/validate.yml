@@ -29,6 +29,7 @@ jobs:
 
             - name: Cross-schema referential integrity
               run: |
+                version=$(python -c 'import json; print(json.load(open("stamped-checklist.json"))["principles_version"])')
                 mkdir -p /tmp/schemas
-                curl -fsSL https://raw.githubusercontent.com/stamped-principles/stamped-principles-schema/main/stamped-principles.json -o /tmp/schemas/stamped-principles.json
+                curl -fsSL "https://raw.githubusercontent.com/stamped-principles/stamped-principles-schema/refs/tags/v${version}/stamped-principles.json" -o /tmp/schemas/stamped-principles.json
                 python ./.github/scripts/check_cross_refs.py --principles /tmp/schemas/stamped-principles.json --checklist ./stamped-checklist.json
