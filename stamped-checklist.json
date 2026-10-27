@@ -1,7 +1,7 @@
 {
-    "checklist_version": "0.3.1",
+    "checklist_version": "0.4.0",
     "schema_version": "0.2.0",
-    "principles_version": "0.2.0",
+    "principles_version": "0.3.0",
     "data": [
         {
             "level": "must",
@@ -20,6 +20,15 @@
                         {
                             "id": "stamped-checklist:must/003",
                             "text": "Is external software included in the environment or linked as submodules within the project boundary?"
+                        }
+                    ]
+                },
+                {
+                    "principle_codes": ["S.2"],
+                    "items": [
+                        {
+                            "id": "stamped-checklist:must/018",
+                            "text": "Are license declarations for all components retrievable within the research object alongside the content they govern?"
                         }
                     ]
                 },
@@ -124,6 +133,15 @@
                     ]
                 },
                 {
+                    "principle_codes": ["T.4"],
+                    "items": [
+                        {
+                            "id": "stamped-checklist:should/010",
+                            "text": "Is provenance for code-driven actions recorded programmatically?"
+                        }
+                    ]
+                },
+                {
                     "principle_codes": ["A.2"],
                     "items": [
                         {
@@ -138,6 +156,19 @@
                         {
                             "id": "stamped-checklist:should/003",
                             "text": "Are raw data, processed data, code, and environment definitions separated into distinct modules?"
+                        }
+                    ]
+                },
+                {
+                    "principle_codes": ["M.3"],
+                    "items": [
+                        {
+                            "id": "stamped-checklist:should/011",
+                            "text": "Is each module's license declared independently?"
+                        },
+                        {
+                            "id": "stamped-checklist:should/012",
+                            "text": "Are module licenses checked for compatibility at the boundaries where modules are combined?"
                         }
                     ]
                 },
@@ -160,6 +191,15 @@
                         {
                             "id": "stamped-checklist:should/005",
                             "text": "Does the workflow spawn disposable environments for each execution, allowing for isolation of runs?"
+                        }
+                    ]
+                },
+                {
+                    "principle_codes": ["D.3"],
+                    "items": [
+                        {
+                            "id": "stamped-checklist:should/013",
+                            "text": "Does each module carry an explicit license with a resolvable identifier?"
                         }
                     ]
                 },

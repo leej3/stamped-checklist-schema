@@ -6,6 +6,7 @@ on:
             - "stamped-checklist-schema.yaml"
             - "stamped-checklist.json"
             - ".github/workflows/validate.yml"
+            - ".github/scripts/check_cross_refs.py"
     workflow_dispatch:
 
 jobs:
