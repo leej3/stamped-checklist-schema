@@ -195,15 +195,6 @@
                     ]
                 },
                 {
-                    "principle_codes": ["D.3"],
-                    "items": [
-                        {
-                            "id": "stamped-checklist:should/013",
-                            "text": "Does each module identify its license in a way that lets a user look up the applicable terms?"
-                        }
-                    ]
-                },
-                {
                     "principle_codes": ["D.2"],
                     "items": [
                         {
@@ -217,6 +208,15 @@
                         {
                             "id": "stamped-checklist:should/008",
                             "text": "Is there a process for updating environment specifications when dependencies change, and are these updates tracked in version control?"
+                        }
+                    ]
+                },
+                {
+                    "principle_codes": ["D.3"],
+                    "items": [
+                        {
+                            "id": "stamped-checklist:should/013",
+                            "text": "Does each module identify its license in a way that lets a user look up the applicable terms?"
                         }
                     ]
                 }
