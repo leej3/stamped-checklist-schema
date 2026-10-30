@@ -28,7 +28,7 @@
                     "items": [
                         {
                             "id": "stamped-checklist:must/018",
-                            "text": "Are license declarations for all components retrievable within the research object alongside the content they govern?"
+                            "text": "Starting from the research object, can a reader find the license terms for every component alongside its content?"
                         }
                     ]
                 },
@@ -137,7 +137,7 @@
                     "items": [
                         {
                             "id": "stamped-checklist:should/010",
-                            "text": "Is provenance for code-driven actions recorded programmatically?"
+                            "text": "Does executing the code automatically produce a record of the actions it performed?"
                         }
                     ]
                 },
@@ -164,11 +164,11 @@
                     "items": [
                         {
                             "id": "stamped-checklist:should/011",
-                            "text": "Is each module's license declared independently?"
+                            "text": "Can a reader identify the license assigned to each module without having to infer it from a project-wide license?"
                         },
                         {
                             "id": "stamped-checklist:should/012",
-                            "text": "Are module licenses checked for compatibility at the boundaries where modules are combined?"
+                            "text": "When modules are combined, have their license terms been checked to confirm that they permit the intended combination?"
                         }
                     ]
                 },
@@ -199,7 +199,7 @@
                     "items": [
                         {
                             "id": "stamped-checklist:should/013",
-                            "text": "Does each module carry an explicit license with a resolvable identifier?"
+                            "text": "Does each module identify its license in a way that lets a user look up the applicable terms?"
                         }
                     ]
                 },

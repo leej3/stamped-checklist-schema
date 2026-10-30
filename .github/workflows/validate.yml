@@ -7,7 +7,6 @@ on:
             - "stamped-checklist.json"
             - ".github/workflows/validate.yml"
             - ".github/scripts/*.py"
-            - ".github/principles-preview.json"
             - ".github/workflows/tag_release.yml"
     workflow_dispatch:
 
@@ -40,5 +39,5 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ github.token }}
               run: |
-                python .github/scripts/fetch_principles.py --preview .github/principles-preview.json --output /tmp/schemas/stamped-principles.json
+                python .github/scripts/fetch_principles.py --output /tmp/schemas/stamped-principles.json
                 python ./.github/scripts/check_cross_refs.py --principles /tmp/schemas/stamped-principles.json --checklist ./stamped-checklist.json
